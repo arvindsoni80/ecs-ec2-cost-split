@@ -6,7 +6,11 @@ Assuming you have done the following steps
 * [Enabled ECS Managed Tags and Enabled Propagate Tags](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html) - `enableECSManagedTags:TRUE` and `propagateTags:SERVICE`
 * [Activated ECS managed tags for cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activate-built-in-tags.html)
 
-This repository provides [Jypter NoteBook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/) for analyzing split cost per service. Check out docs to install jupyter.
+This repository provides [Jypter NoteBook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/) for analyzing split cost per service. Check out docs to install jupyter. Download the CUR report as CSV file with the split cost allocation data.
+
 ```bash
-git clone 
+git clone https://github.com/arvindsoni80/ecs-ec2-cost-split.git
+cd ecs-ec2-cost-split
+jupyter notebook &
 ```
+Open the `split-cost-allocation-ecs-ec2.ipynb` notebook. Change the variables such as CUR CSV file name, account id, and region as per your ECS settings. Then simply run the whole notebook. 
