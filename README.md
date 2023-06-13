@@ -5,6 +5,7 @@ Assuming you have done the following steps
 * [Enabled split-cost-allocation](https://docs.aws.amazon.com/cur/latest/userguide/enabling-split-cost-allocation-data.html)
 * [Enabled ECS Managed Tags and Enabled Propagate Tags](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html) - `enableECSManagedTags:TRUE` and `propagateTags:SERVICE`
 * [Activated ECS managed tags for cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activate-built-in-tags.html)
+* Check out [full pre-requisities](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/usage-reports.html#task-cur)
 
 This repository provides [Jypter NoteBook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/) for analyzing split cost per service. Check out docs to install jupyter. Download the CUR report as CSV file with the split cost allocation data.
 
