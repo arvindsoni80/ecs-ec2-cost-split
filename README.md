@@ -14,6 +14,11 @@ git clone https://github.com/arvindsoni80/ecs-ec2-cost-split.git
 cd ecs-ec2-cost-split
 jupyter notebook &
 ```
+If Jupyter notebook doesn't start you can try: 
+```bash
+jupyter lab build
+jupyter lab &
+```
 Open the `split-cost-allocation-ecs-ec2.ipynb` notebook. Change the variables such as CUR CSV file name, account id, and region as per your ECS settings. Then simply run the whole notebook. You will see the analysis done using the new split cost allocation. For example:
 
 ![vCPU and Memory used and unused cost by ECS Service](./images/split-cost-data.png)
